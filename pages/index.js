@@ -44,17 +44,17 @@ export default function Home() {
             <UserImage src="https://upload.wikimedia.org/wikipedia/ro/thumb/7/78/Trollface.svg/1200px-Trollface.svg.png" onClick={()=> signOut(auth)} />  
           </Profile>
         </Header>
-        <InputButton>
+        <InputButton className='bg-gray-300 tracking-widest rounded-lg'>
         Where to?
         </InputButton>
         <ActionButtons className='mt-10'>
          <Link href="/search" > 
-          <ActionButton className='mx-5'><ActionButtonImage src='https://i.ibb.co/cyvcpfF/uberx.png' />
+          <ActionButton className='mx-5 rounded-lg  tracking-widest bg-gray-300'><ActionButtonImage src='https://i.ibb.co/cyvcpfF/uberx.png' />
             Ride</ActionButton>
          </Link>   
-          <ActionButton className='mx-5'><ActionButtonImage src='https://i.ibb.co/n776JLm/bike.png' />
+          <ActionButton className='mx-5 rounded-lg tracking-widest bg-gray-300'><ActionButtonImage src='https://i.ibb.co/n776JLm/bike.png' />
             2-Wheels</ActionButton>
-          <ActionButton className='mx-5'><ActionButtonImage src='https://i.ibb.co/5RjchBg/uberschedule.png' />
+          <ActionButton className='mx-5 rounded-lg tracking-widest  bg-gray-300'><ActionButtonImage src='https://i.ibb.co/5RjchBg/uberschedule.png' />
             Reserve</ActionButton>
         </ActionButtons>
        
@@ -90,7 +90,7 @@ flex cursor-pointer
 const ActionButton = tw.div`
 bg-gray-200 flex-1 m-1 shadow-xl  h-[8rem] items-center cursor:pointer flex flex-col justify-center rounded-lg transform hover:scale-105 hover:text-orange-500 transition text-xl
 `
-const ActionButtonImage = tw.img`
+const ActionButtonImage = tw.img`  tracking-widest
 h-3/5
 `
 const InputButton = tw.div`

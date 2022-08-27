@@ -32,7 +32,7 @@ const Login = () => {
 export default Login
 
 const Wrapper=tw.div`
-flex flex-col h-screen bg-gray-200 w-[95%] p-4 mx-auto 
+flex flex-col h-screen bg-gray-200 w-screen p-4 mx-auto 
 `
 const SingInButton = tw.button`
 bg-black text-white text-center py-4 mt-8 self-center w-full cursor-pointer

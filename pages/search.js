@@ -11,7 +11,7 @@ const Search = () => {
   return (
     <Wrapper>
       <ButtonContainer><Link href="/" > 
-       <BackButton className='cursor-pointer' src='https://img.icons8.com/ios-filled/50/000000/left.png' />
+       <BackButton className='cursor-pointer hover:rotate-180' src='https://img.icons8.com/ios-filled/50/000000/left.png' />
        </Link>
       </ButtonContainer>
       <InputContainer>

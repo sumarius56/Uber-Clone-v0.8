@@ -44,6 +44,9 @@ export default function Home() {
             <UserImage src="https://upload.wikimedia.org/wikipedia/ro/thumb/7/78/Trollface.svg/1200px-Trollface.svg.png" onClick={()=> signOut(auth)} />  
           </Profile>
         </Header>
+        <InputButton>
+        Where to?
+        </InputButton>
         <ActionButtons>
          <Link href="/search" > 
           <ActionButton><ActionButtonImage src='https://i.ibb.co/cyvcpfF/uberx.png' />
@@ -54,9 +57,7 @@ export default function Home() {
           <ActionButton><ActionButtonImage src='https://i.ibb.co/5RjchBg/uberschedule.png' />
             Reserve</ActionButton>
         </ActionButtons>
-      <InputButton>
-        Where to?
-      </InputButton> 
+       
       </ActionItems>
     </Wrapper>
   )
@@ -72,10 +73,10 @@ const Header = tw.div`
 flex justify-between items-center
 `
 const UberLogo =tw.img`
-h-28
+h-28 
 `
 const UserImage = tw.img`
-h-12 w-12 rounded-full border-gray-200 p-px cursor-pointer
+h-12 w-12 rounded-full border-gray-200 p-px cursor-pointer mr-[4px]
 `
 const Name = tw.div`
 mr-4 w-20 text-sm
@@ -84,15 +85,15 @@ const Profile = tw.div`
 flex items-center 
 `
 const ActionButtons = tw.div`
-flex 
+flex cursor-pointer 
 `
 const ActionButton = tw.div`
-bg-gray-200 flex-1 m-1 h-32 items-center flex flex-col justify-center rounded-lg transform hover:scale-105 transition text-xl
+bg-gray-200 flex-1 m-1 h-32 items-center cursor:pointer flex flex-col justify-center rounded-lg transform hover:scale-105 hover:text-orange-500 transition text-xl
 `
 const ActionButtonImage = tw.img`
 h-3/5
 `
 const InputButton = tw.div`
-h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8
+h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8 shadow-xl  
 
 `

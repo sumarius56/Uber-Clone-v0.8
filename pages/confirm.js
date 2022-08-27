@@ -72,7 +72,7 @@ useEffect(()=>{
       dropoffCoordinates={dropoffCoordinates}
       />
       <ConfirmButtonContainer>
-        <ConfirmButton> Confirm UberX</ConfirmButton>     
+        <ConfirmButton className='cursor=pointer hover:scale-105 hover:text-green-500'> Confirm UberX</ConfirmButton>     
       </ConfirmButtonContainer>
      </RideContainer>
     </Wrapper>

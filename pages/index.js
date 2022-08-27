@@ -47,14 +47,14 @@ export default function Home() {
         <InputButton>
         Where to?
         </InputButton>
-        <ActionButtons>
+        <ActionButtons className='mt-10'>
          <Link href="/search" > 
-          <ActionButton><ActionButtonImage src='https://i.ibb.co/cyvcpfF/uberx.png' />
+          <ActionButton className='mx-5'><ActionButtonImage src='https://i.ibb.co/cyvcpfF/uberx.png' />
             Ride</ActionButton>
          </Link>   
-          <ActionButton><ActionButtonImage src='https://i.ibb.co/n776JLm/bike.png' />
+          <ActionButton className='mx-5'><ActionButtonImage src='https://i.ibb.co/n776JLm/bike.png' />
             2-Wheels</ActionButton>
-          <ActionButton><ActionButtonImage src='https://i.ibb.co/5RjchBg/uberschedule.png' />
+          <ActionButton className='mx-5'><ActionButtonImage src='https://i.ibb.co/5RjchBg/uberschedule.png' />
             Reserve</ActionButton>
         </ActionButtons>
        
@@ -88,7 +88,7 @@ const ActionButtons = tw.div`
 flex cursor-pointer 
 `
 const ActionButton = tw.div`
-bg-gray-200 flex-1 m-1 h-32 items-center cursor:pointer flex flex-col justify-center rounded-lg transform hover:scale-105 hover:text-orange-500 transition text-xl
+bg-gray-200 flex-1 m-1 shadow-xl  h-[8rem] items-center cursor:pointer flex flex-col justify-center rounded-lg transform hover:scale-105 hover:text-orange-500 transition text-xl
 `
 const ActionButtonImage = tw.img`
 h-3/5

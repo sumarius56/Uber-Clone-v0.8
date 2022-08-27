@@ -23,7 +23,7 @@ const Login = () => {
    <Wrapper>
     <UberLogo src='https://i.ibb.co/n6LWQM4/Post.png' />
     <Title>Log in to access your account</Title>
-    <HeadImage src="https://i.ibb.co/CsV9RYZ/login-image.png" />
+    <HeadImage className='h-[30rem]' src="https://i.ibb.co/CsV9RYZ/login-image.png" />
     <SingInButton onClick={()=> signInWithPopup(auth, provider)}>Sing in with Google</SingInButton>
    </Wrapper>
   )
@@ -32,17 +32,17 @@ const Login = () => {
 export default Login
 
 const Wrapper=tw.div`
-flex flex-col h-screen bg-gray-200 w-screen p-4
+flex flex-col h-screen bg-gray-200 w-[95%] p-4 mx-auto 
 `
 const SingInButton = tw.button`
 bg-black text-white text-center py-4 mt-8 self-center w-full cursor-pointer
 `
 const UberLogo = tw.img`
-h-20 w-auto object-contain self-start
+h-20 w-auto object-contain self-start mr-4
 `
 const Title = tw.div`
 text-5xl pt-4 gray-500
 `
 const HeadImage = tw.img`
-object-contain w-full
+object-contain w-full 
 `

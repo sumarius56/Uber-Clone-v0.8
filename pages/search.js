@@ -11,7 +11,7 @@ const Search = () => {
   return (
     <Wrapper>
       <ButtonContainer><Link href="/" > 
-       <BackButton src='https://img.icons8.com/ios-filled/50/000000/left.png' />
+       <BackButton className='cursor-pointer' src='https://img.icons8.com/ios-filled/50/000000/left.png' />
        </Link>
       </ButtonContainer>
       <InputContainer>
@@ -32,7 +32,7 @@ const Search = () => {
           onChange={(e)=>setDropoff(e.target.value)} 
           />
         </InputBoxes>
-        <Plus src="https://img.icons8.com/ios/50/000000/plus-math.png" />  
+        <Plus className="cursor-pointer" src="https://img.icons8.com/ios/50/000000/plus-math.png" />  
       </InputContainer>
       <SavedPlaces>
         <StarIcon src="https://img.icons8.com/ios-filled/50/ffffff/star--v1.png" />

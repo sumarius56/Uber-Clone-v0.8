@@ -23,8 +23,8 @@ const Login = () => {
    <Wrapper>
     <UberLogo src='https://i.ibb.co/n6LWQM4/Post.png' />
     <Title>Log in to access your account</Title>
-    <HeadImage className='h-[30rem]' src="https://i.ibb.co/CsV9RYZ/login-image.png" />
-    <SingInButton onClick={()=> signInWithPopup(auth, provider)}>Sing in with Google</SingInButton>
+    <HeadImage className='h-[40rem]' src="https://i.ibb.co/CsV9RYZ/login-image.png" />
+    <SingInButton className=' w-[50%] hover:scale-105 transition' onClick={()=> signInWithPopup(auth, provider)}>Sing in with Google</SingInButton>
    </Wrapper>
   )
 }

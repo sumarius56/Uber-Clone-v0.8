@@ -8,12 +8,12 @@ This appplication was built using NEXT.JS and is styled with Tailwind CSS. The a
 
 TECHNOLOGIES
 
-Next.JS
-Tailwind
-Javascript
-Firebase
-Mapbox
-Google Auth
+Next.JS,
+Tailwind,
+Javascript,
+Firebase,
+Mapbox,
+Google Auth,
 
 FOOTAGE
 
